@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Fembey</title>
+    <style>
+        .promotion__absolute2 {
+            position: absolute;
+            top: 20px;
+            right: 300px;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+
+        }
+
+        .header__top__menu {
+            display: flex;
+        }
+
+        .top__menu__atributes {
+
+            display: flex;
+            justify-content: start;
+            width: 100%;
+            cursor: pointer;
+
+        }
+
+
+        .top__menu__atributes2 {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+        }
+
+        .margin {
+            margin-right: 5%;
+            cursor: pointer;
+            font-size: smaller;
+        }
+
+        :hover.margin {
+            color: red;
+        }
+
+        .Logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .bottom__header {
+            display: flex;
+        }
+
+        .bottom_header_Search {
+            display: flex;
+            justify-content: start;
+            width: 50%;
+
+
+
+        }
+
+        .bottom_header_attributes {
+            display: flex;
+            width: 100%;
+            justify-content: start;
+
+        }
+
+        .Search {
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+            padding-left: 10%;
+            padding-right: 10%;
+            width: 100%;
+            outline: none;
+            border: 1px solid lightgray;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-shrink: inherit;
+
+        }
+
+        .categories__section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .categories__text {
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .categories__row {
+            display: flex;
+            flex-direction: row;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            justify-content: center;
+            padding: 20px;
+            object-fit: contain;
+            width: 100%;
+            max-width: 100%;
+            margin-right: 10px;
+            transition: transform 450ms
+        }
+
+
+
+        .rounded__img {
+            border: 1px solid lightgray;
+            border-radius: 50%;
+            overflow: hidden;
+            height: 400px;
+            width: 400px;
+        }
+
+        .promotions__flex {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .promotion__absolutie {
+            position: absolute;
+            top: 20px;
+            left: 550px;
+
+
+        }
+
+        .text {
+            font-size: xx-large;
+            color: white;
+            font-weight: bolder;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 30px;
+        }
+
+        :hover.btn {
+            background-color: white;
+            color: black;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            margin-top: 5%;
+        }
+
+        .footer_flex {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+        .footer__heading {
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .footersubtext {
+            font-size: x-small;
+            cursor: pointer;
+
+        }
+
+        :hover.footersubtext {
+            color: red
+        }
+
+        .payment__flex {
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .DISCLAMER {
+            background-color: black;
+            color: white;
+            border: 5px solid white;
+        }
+
+        .disalcenertext {
+            font-size: xx-large;
+            font-weight: bolder;
+            padding: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top__menu">
+            <div class="top__menu__atributes">
+                <div class="text-center mr-5">
+                    <i class="fas fa-user"></i>
+                    <p class="margin">
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Seller
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" href="#">Signup</a>
+
+                        </div>
+                    </div>
+                    </p>
+                </div>
+                <div class="text-center mr-5">
+                    <i class="fas fa-credit-card"></i>
+                    <p class="margin mt-2">Contact</p>
+                </div>
+                <div class="text-center mr-5">
+                    <i class="fas fa-user-tie"></i>
+                    <p class="margin">
+                    <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Buyer
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Login</a>
+                            <a class="dropdown-item" href="#">Signup</a>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+                <div class="text-center mr-5">
+                    <i class="fas fa-credit-card"></i>
+                    <p class="margin mt-2">Add to Cart</p>
+                </div>
+                <div class="text-center mr-5">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <p class="margin mt-2">Add to Wishlist</p>
+                </div>
+
+            </div>
+            <div class="top__menu__atributes2">
+                <p class="margin">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Currency
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">PKR</a>
+                        <a class="dropdown-item" href="#">INR</a>
+
+                    </div>
+                </div>
+                </p>
+                <p class="margin">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Country
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Pakistan</a>
+                        <a class="dropdown-item" href="#">India</a>
+
+                    </div>
+                </div>
+                </p>
+                <p class="margin">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Urdu</a>
+                        <a class="dropdown-item" href="#">Hindi</a>
+
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+        <div class="Logo"><img src="Images/logo.svg" alt="logo" /> </div>
+        <div class="bottom__header">
+            <div class="bottom_header_Search"><input type="text" placeholder="Search" class="Search" name="search" />
+            </div>
+            <div class="bottom_header_attributes ml-5">
+                <p class="margin">WHOLESALE</p>
+                <p class="margin">CULTURE</p>
+                <p class="margin">RETAIL</p>
+                <p class="margin">BRANDS</p>
+                <p class="margin">AUTOS</p>
+            </div>
+
+        </div>
+
+
+
+    </header>
+    <main>
+        <div class="mt-4">
+            <img src="images/home.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="categories__section">
+            <p class="categories__text ml-5 mt-5 ">Categories</p>
+            <div class="categories__row text-center">
+                <!-- 
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img"> -->
+
+
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+                    <p>Category 1</p>
+                </div>
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+                    <p>Category 1</p>
+                </div>
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+                    <p>Category 2</p>
+                </div>
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+                    <p>Category 3</p>
+                </div>
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+                    <p>Category 4 1rp</p>
+                </div>
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="categories__section">
+            <p class="categories__text ml-5 mt-5 ">Products</p>
+            <div class="categories__row text-center">
+                <!-- 
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img"> -->
+
+
+                <div>
+                    <img src="images/jackets.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/sunglasses.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/shoe.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/beauty.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+
+
+
+
+            </div>
+            <div class="categories__row text-center">
+                <!-- 
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img"> -->
+
+
+                <div>
+                    <img src="images/jackets.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/sunglasses.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/shoe.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/beauty.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+        <div class="categories__section">
+            <p class="categories__text ml-5 mt-5 ">Featured Products</p>
+            <div class="categories__row text-center">
+                <!-- 
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img"> -->
+
+
+                <div>
+                    <img src="images/jackets.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/sunglasses.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/shoe.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/beauty.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="categories__section">
+            <p class="categories__text ml-5 mt-5 ">Shops</p>
+            <div class="categories__row text-center">
+                <!-- 
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img">
+                <img src="Images/Group 1.png" alt="" height="400px" width="400px" class="mr-4 rounded__img"> -->
+
+
+                <div>
+                    <img src="images/jackets.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/sunglasses.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/shoe.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/beauty.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+                <div>
+                    <img src="Images/Group 1.png" alt="" height="200px" width="340px" class="mr-2">
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="promotions ">
+            <p class="categories__text ml-5 mt-5">Promotions</p>
+            <div class="promotions__flex">
+                <div><img src="images/Group 1.png" alt="" width="100%"></div>
+                <div><img src="images/Group 2.png" alt="" width="100%"></div>
+                <div class="">
+                    <div class="promotion__absolutie">
+                        <p class="text">New Collection</p>
+                        <p class="btn">View All</p>
+                    </div>
+                    <div class="promotion__absolute2">
+                        <p class="text">Redefining the mordern desgin</p>
+                        <p class="btn">Check more</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_flex">
+            <div class="ml-5">
+                <p class="footer__heading">INFORMATION</p>
+                <p class="footersubtext">ABOUT US</p>
+                <p class="footersubtext">DELIVERY INFORMATION</p>
+                <p class="footersubtext">TERMS AND CONDITION</p>
+                <p class="footersubtext">RETURN POLICY</p>
+            </div>
+            <div>
+                <p class="footer__heading">HELP</p>
+                <p class="footersubtext">FAQ</p>
+                <p class="footersubtext">PRIVACY POLICY</p>
+                <p class="footersubtext">FEEDBACK</p>
+            </div>
+            <div class="mr-5">
+                <p class="footer__heading">ACCOUNT</p>
+                <p class="footersubtext">My ACCOUNT</p>
+                <p class="footersubtext">REPORT A PROBLEM</p>
+                <p class="footersubtext">TRACK ORDERs</p>
+            </div>
+        </div>
+        <div class="payment__flex">
+            <div class="ml-5">
+                <img src="Images/580b57fcd9996e24bc43c530.png" alt="" width="50" height="20">
+                <img src="Images/visa-3-226460.png" alt="" width="50" height="40">
+                <img src="Images/Maestro_logo.png" alt="" width="20" height="20">
+                <img src="Images/MasterCard_early_1990s_logo.svg.png" alt="" width="20" height="20">
+                <img src="Images/UnionPay-logo.png" alt="" width="20" height="20">
+                <img src="images/American-Express-Logo.png" alt="" width="20" height="20">
+            </div>
+            <div>
+                <img src="Images/dhl-3.svg" alt="" width="50" height="20">
+                <img src="Images/Ups.png" alt="" width="20" height="20">
+                <img src="Images/unnamed.png" alt="" width="20" height="20">
+
+            </div>
+            <div class="mr-5">
+                <img src="Images/klipartz.com (1).png" alt="" width="20" height="20">
+                <img src="Images/klipartz.com (2).png" alt="" width="20" height="20">
+                <img src="Images/klipartz.com (3).png" alt="" width="20" height="20">
+                <img src="images/klipartz.com.png" width="20" height="20">
+            </div>
+
+        </div>
+        <div class="DISCLAMER text-center ml-5 mr-5">
+            <p class="disalcenertext">DISCLAMER</p>
+
+        </div>
+        <div class="ml-5">
+            <p><i class="fas fa-copyright"></i> 2021 Fimbey.com</p>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

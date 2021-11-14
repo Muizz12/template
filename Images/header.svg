@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1068">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Web_1920_45);
+      }
+
+      .cls-2 {
+        filter: url(#Path_210);
+      }
+    </style>
+    <filter id="Path_210" x="-70.289" y="-1059.355" width="2105.578" height="1619.355" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_45">
+      <rect width="3320" height="3268"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_45" data-name="Web 1920 – 45" class="cls-1">
+    <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <path id="Path_210-2" data-name="Path 210" d="M-11.83,1387.355s182.751-294.584,1234.585-215.826,819.088-541.851,819.088-541.851L1997.084-202-11.83-183.1Z" transform="translate(-48.46 -847.36)"/>
+    </g>
+  </g>
+</svg>
